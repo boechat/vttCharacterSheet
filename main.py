@@ -1,5 +1,5 @@
-from ficha import Personagem
-from poderes import POWERS
+from sheet import Personagem
+from powers import POWERS
 
 def escolher_poder():
     print("Escolha um poder:")
