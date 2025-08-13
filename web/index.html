@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Mutantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Mutante</h1>
+        <form id="fichaForm">
+            <label>Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label>Idade:</label>
+            <input type="number" id="idade" required>
+
+            <label>Mutação:</label>
+            <input type="text" id="mutacao" required>
+
+            <label>Nível:</label>
+            <input type="number" id="nivel" required>
+
+            <label>Poderes:</label>
+            <select id="poder" multiple>
+                <option value="Super força">Super força</option>
+                <option value="Regeneração">Regeneração</option>
+                <option value="Controle mental">Controle mental</option>
+                <option value="Invisibilidade">Invisibilidade</option>
+                <option value="Teletransporte">Teletransporte</option>
+                <option value="Manipulação de energia">Manipulação de energia</option>
+                <option value="Velocidade sobre-humana">Velocidade sobre-humana</option>
+                <option value="Leitura de pensamentos">Leitura de pensamentos</option>
+            </select>
+
+            <button type="submit">Salvar Ficha</button>
+        </form>
+
+        <div id="fichaExibida" class="ficha"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
